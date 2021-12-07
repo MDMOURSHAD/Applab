@@ -1,18 +1,1078 @@
-
-
 @media (max-width: 1599px) {
-	
+	/*
+	=======================================
+	Ultimate Features Section
+	=======================================
+	*/
+	.ultimate-features-section .container-xl {
+		max-width: 1170px;
+		padding-right: var(--bs-gutter-x, 0.75rem);
+		padding-left: var(--bs-gutter-x, 0.75rem);
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.ultimate-features-content {
+		width: 100%;
+	}
+	.ultimate-features-content .row .col-md-8 {
+		width: 58.3333333333%;
+	}
+	.ultimate-features-content .row .col-md-4 {
+		width: 41.6666666667%;
+	}
+	/*
+	=======================================
+	Price Section
+	=======================================
+	*/
+	.price-area {
+		width: 34% !important;
+	}
+	/*
+	=======================================
+	Testimonial Section
+	=======================================
+	*/
+	.testimonial-section .container-xl {
+		max-width: 1170px;
+		padding-right: var(--bs-gutter-x, 0.75rem);
+		padding-left: var(--bs-gutter-x, 0.75rem);
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.testimonial-row {
+		width: 100%;
+	}
+	.testimonial-row>* {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		margin-bottom: 30px !important;
+	}
+	.testimonial-row .col-md-6:first-child {
+		width: 50%;
+		-webkit-box-align: center !important;
+		-ms-flex-align: center !important;
+		align-items: center !important;
+	}
+	.testimonial-row .col-md-6:last-child {
+		width: 50%;
+	}
+	/*
+	=======================================
+	Download Section
+	=======================================
+	*/
+	.download-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.download-container {
+		max-width: 1170px !important;
+		padding-right: var(--bs-gutter-x, 0.75rem);
+		padding-left: var(--bs-gutter-x, 0.75rem);
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.download-row {
+		width: 100%;
+	}
+	.download-row .col-md-6:first-child {
+		width: 58.3333333333%;
+	}
+	.download-row .col-md-6:last-child {
+		width: 41.6666666667%;
+	}
 }
 
-@media (max-width: 1399px) {}
+@media (max-width: 1399px) {
+	/*
+	===============================================
+	Header Section
+	===============================================
+	*/
+	header {
+		padding-top: 40px !important;
+	}
+}
 
-@media (max-width: 1199px) { ... }
+@media (max-width: 1299px) {
+	/*
+	=======================================
+	Features Section
+	=======================================
+	*/
+	.features-container {
+		max-width: 1170px !important;
+		padding-right: var(--bs-gutter-x, 0.75rem);
+		padding-left: var(--bs-gutter-x, 0.75rem);
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.features-container .row>* {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		margin-bottom: 30px !important;
+	}
+	.features-img img {
+		margin-left: 0px;
+	}
+	.features-section .row .col-lg-6:first-of-type {
+		width: 50% !important;
+	}
+	.features-section .row .col-lg-6:last-of-type {
+		width: 50% !important;
+	}
+	/*
+	=======================================
+	Design Built Section
+	=======================================
+	*/
+	.design-built-container {
+		max-width: 1170px !important;
+		padding-right: var(--bs-gutter-x, 0.75rem);
+		padding-left: var(--bs-gutter-x, 0.75rem);
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.design-built-container .row>* {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		margin-bottom: 30px !important;
+	}
+	.design-bulit-img img {
+		margin-left: 0px;
+	}
+	/*
+	=======================================
+	Ultimate Features Section
+	=======================================
+	*/
+	.ultimate-features-content .row>* {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+		margin-bottom: 30px !important;
+	}
+}
 
-@media (max-width: 991px) { ... }
+@media (max-width: 1199px) {
+	/*
+	=======================================
+	Font size
+	=======================================
+	*/
+	.font-size-40 {
+		font-size: 35px;
+	}
+	/*
+	=======================================
+	Our Partners Section
+	=======================================
+	*/
+	.partners-section .row .col-lg-10 {
+		width: 100%;
+	}
+	/*
+	==========================
+	Swiper Slide
+	==========================
+	*/
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+	}
+	.swiper-slide {
+		width: 18%;
+	}
+	/*
+	=======================================
+	Features Section
+	=======================================
+	*/
+	.features-container {
+		max-width: 960px !important;
+	}
+	.features-contents {
+		max-width: 100% !important;
+	}
+	/*
+	=======================================
+	Jacpots Section
+	=======================================
+	*/
+	.jacpots-title {
+		width: 100%;
+	}
+	.jacpots-heading h2 {
+		width: 100%;
+	}
+	.jacpots-title-desc p {
+		padding-left: 20px;
+	}
+	/*
+	=======================================
+	Design Built Section
+	=======================================
+	*/
+	.design-built-container {
+		max-width: 960px !important;
+	}
+	.design-built {
+		padding-bottom: 0px;
+	}
+	.design-built-content {
+		padding-left: 0px;
+	}
+	.design-built-content h3 {
+		width: 92% !important;
+	}
+	.design-built-content p {
+		width: 100% !important;
+	}
+	/*
+	=======================================
+	Choose App Section
+	=======================================
+	*/
+	.choose-app-section {
+		padding: 80px 0px;
+	}
+	.apps-content {
+		width: 100%;
+	}
+	.apps-content .row>* {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.apps-content .row .col-md-4 {
+		width: 33.3333333333%;
+	}
+	/*
+	=======================================
+	Ultimate Features Section
+	=======================================
+	*/
+	.ultimate-features-section .container-xl {
+		max-width: 960px;
+	}
+	.ultimate-features-title h2 {
+		width: 67%;
+	}
+	.ultimate-features-content .row .col-xl-8 {
+		width: 58.3333333333%;
+	}
+	.ultimate-features-content .row .col-xl-4 {
+		width: 41.6666666667%;
+	}
+	.ultimate-features-title p {
+		width: 80%;
+	}
+	.ultimate-features-title h2 {
+		width: 80%;
+	}
+	.ultimate-features-list .row .col-md-6 {
+		width: 50%;
+	}
+	/*
+	=======================================
+	Price Section
+	=======================================
+	*/
+	.price-section {
+		padding-top: 80px;
+	}
+	.price-area {
+		width: 40% !important;
+	}
+	/*
+	=======================================
+	Testimonial Section
+	=======================================
+	*/
+	.testimonial-section {
+		padding-top: 80px;
+	}
+	.testimonial-section .container-xl {
+		max-width: 960px;
+	}
+	.testimonial-text h2 {
+		font-size: 30px;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 67%;
+	}
+	.review-desc {
+		font-size: 15px;
+	}
+	/*
+	=======================================
+	Asked Section
+	=======================================
+	*/
+	.asked-section {
+		padding-top: 80px;
+	}
+	.accordion-area {
+		max-width: 750px;
+	}
+	.accordion-area a {
+		font-size: 18px;
+	}
+	.panel p {
+		padding: 25px 0px;
+	}
+	/*
+	=======================================
+	Download Section
+	=======================================
+	*/
+	.download-container {
+		max-width: 960px !important;
+	}
+	.download-row .col-md-6:first-child {
+		width: 50%;
+	}
+	.download-row .col-md-6:last-child {
+		width: 50%;
+	}
+	.download-text h3 {
+		font-size: 44px;
+		line-height: 55px;
+	}
+	/*
+	=======================================
+	Footer Section
+	=======================================
+	*/
+	.footer-section {
+		padding-top: 110px;
+		padding-bottom: 110px;
+	}
+}
 
-@media (max-width: 767px) { ... }
+@media (max-width: 991px) {
+	/*
+	=======================================
+	Header Section
+	=======================================
+	*/
+	/*
+	======================
+	Mobile Menu
+	======================
+	*/
+	.mobile-menu {
+		display: block !important;
+	}
+	.mobile-menu .hamburger-menu {
+		width: 35px;
+		height: 30px;
+		top: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		right: 0px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		position: absolute;
+		z-index: 9999999999;
+		cursor: pointer;
+	}
+	.hamburger-menu .line {
+		width: 100%;
+		height: 4px;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-o-border-radius: 5px;
+		-ms-border-radius: 5px;
+		background: #242f51;
+		transition: all .8s;
+		-webkit-transition: all .8s;
+		-moz-transition: all .8s;
+		-ms-transition: all .8s;
+		-o-transition: all .8s;
+	}
+	.change .line-1 {
+		transform: rotateZ(-45deg) translate(-8px, 6px);
+		-webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
+		-moz-transform: rotateZ(-45deg) translate(-8px, 6px);
+		-o-transform: rotateZ(-45deg) translate(-8px, 6px);
+		-ms-transform: rotateZ(-45deg) translate(-8px, 6px);
+	}
+	.change .line-2 {
+		opacity: 0;
+	}
+	.change .line-3 {
+		transform: rotateZ(45deg) translate(-8px, -6px);
+		-webkit-transform: rotateZ(45deg) translate(-8px, -6px);
+		-moz-transform: rotateZ(45deg) translate(-8px, -6px);
+		-o-transform: rotateZ(45deg) translate(-8px, -6px);
+		-ms-transform: rotateZ(45deg) translate(-8px, -6px);
+	}
+	.mobile-menu .nav-list {
+		background: #fff;
+		position: fixed;
+		right: -400px;
+		top: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		z-index: 99999999;
+		height: 100%;
+		width: 400px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		transition: right .8s;
+		-webkit-transition: right .8s;
+		-moz-transition: right .8s;
+		-o-transition: right .8s;
+		-ms-transition: right .8s;
+	}
+	.mobile-menu .nav-list .btn-prm {
+		padding: 10px 30px;
+		font-size: 16px;
+	}
+	.slide-menu {
+		right: 0 !important;
+	}
+	.nav-list ul {
+		text-align: center;
+		padding: 0px;
+	}
+	.nav-list ul li:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	.nav-list ul li a {
+		color: #242f51;
+		text-transform: uppercase;
+		font-size: 22px;
+		text-decoration: none;
+		display: block;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+	/*
+	=======================================
+	Banner Section Css
+	=======================================
+	*/
+	.banner-text h1 {
+		line-height: 68px;
+		font-size: 43px;
+	}
+	.banner-text p {
+		font-size: 16px;
+	}
+	/*
+	=======================================
+	Our Partners Section
+	=======================================
+	*/
+	.partners-section {
+		padding-top: 70px;
+		padding-bottom: 0px;
+	}
+	/*
+	==========================
+	Swiper Slide
+	==========================
+	*/
+	/*
+	=======================================
+	Features Section
+	=======================================
+	*/
+	.features-container {
+		max-width: 720px !important;
+	}
+	.features-container .row>* {
+		margin-bottom: 0px !important;
+	}
+	.features-section .row .col-lg-6:first-of-type {
+		width: 100% !important;
+	}
+	.features-section .row .col-lg-6:last-of-type {
+		width: 100% !important;
+	}
+	.features-desc {
+		margin-top: 40px;
+	}
+	.features-title p {
+		max-width: 80%;
+		margin: 15px auto;
+	}
+	.f-text p {
+		max-width: 72%;
+	}
+	/*
+	=======================================
+	Jacpots Section
+	=======================================
+	*/
+	.jacpots-section {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.jacpots-title {
+		margin-bottom: 80px;
+	}
+	.jacpots-heading h2 {
+		font-size: 30px;
+	}
+	.jacpots-content {
+		width: 100%;
+	}
+	.jacpots-content .row .col-md-6:last-child {
+		margin-top: 20px;
+	}
+	.jacpots-item p {
+		width: 90%;
+		margin: 0 auto;
+	}
+	/*
+	=======================================
+	Design Built Section
+	=======================================
+	*/
+	.design-built-container {
+		max-width: 720px !important;
+	}
+	.design-built-content h3 {
+		width: 100% !important;
+	}
+	.storage {
+		margin-top: 65px;
+	}
+	/*
+	=======================================
+	Choose App Section
+	=======================================
+	*/
+	.choose-app-section {
+		padding: 50px 0px;
+	}
+	.apps-content {
+		margin-top: 50px;
+	}
+	/*
+	=======================================
+	Ultimate Features Section
+	=======================================
+	*/
+	.ultimate-features-section {
+		padding-top: 20px;
+	}
+	.ultimate-features-section .container-xl {
+		max-width: 720px !important;
+	}
+	.ultimate-features-title h2 {
+		width: 61%;
+	}
+	.ultimate-features-content .row .col-xl-8 {
+		width: 100%;
+	}
+	.ultimate-features-content .row .col-xl-4 {
+		width: 100%;
+	}
+	.features-list p {
+		margin-right: 42px;
+	}
+	/*
+	=======================================
+	Price Section
+	=======================================
+	*/
+	.price-section {
+		padding-top: 0px;
+	}
+	.price-area {
+		width: 50% !important;
+	}
+	/*
+	=======================================
+	Testimonial Section
+	=======================================
+	*/
+	.testimonial-section .container-xl {
+		max-width: 720px !important;
+	}
+	.testimonial-row>* {
+		margin-bottom: 60px !important;
+	}
+	.testimonial-text h2 {
+		font-size: 40px;
+	}
+	.testimonial-text p {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.review-desc {
+		width: 77%;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 63%;
+	}
+	/*
+	=========================
+	Testimonial Slider
+	=========================
+	*/
+	/*
+	=======================================
+	Asked Section
+	=======================================
+	*/
+	.accordion-area {
+		max-width: 100%;
+	}
+	.accordion-area a {
+		font-size: 16px;
+	}
+	/*
+	=======================================
+	Download Section
+	=======================================
+	*/
+	.download-container {
+		max-width: 720px !important;
+	}
+	/*.download-store img:first-child{
+		margin-bottom: 20px;
+	}*/
+	/*
+	=======================================
+	Footer Section
+	=======================================
+	*/
+}
 
-@media (max-width: 575px) { ... }
+@media (max-width: 767px) {
+	/*
+	=======================================
+	Reusable Components
+	=======================================
+	*/
+	.btn-prm {
+		padding: 12px 30px;
+	}
+	/*
+	=======================================
+	Banner Section Css
+	=======================================
+	*/
+	.banner-text {
+		margin-top: 100px;
+	}
+	.banner-text h1 {
+		line-height: 63px;
+		font-size: 45px;
+	}
+	/*
+	=======================================
+	Features Section
+	=======================================
+		*/
+	.features-container {
+		max-width: 540px !important;
+	}
+	.f-icon {
+		margin-right: 0px;
+	}
+	.f-text {
+		margin-top: 10px;
+	}
+	.f-text p {
+		max-width: 100%;
+	}
+	/*
+	=======================================
+	Jacpots Section
+	=======================================
+	*/
+	.jacpots-heading {
+		width: 100%;
+	}
+	.jacpots-title-desc {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.jacpots-title-desc p {
+		width: 80%;
+		padding-left: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.jacpots-row>* {
+		margin-bottom: 24px;
+	}
+	/*
+	=======================================
+	Design Built Section
+	=======================================
+	*/
+	.design-built-container {
+		max-width: 540px !important;
+	}
+	/*
+	=======================================
+	Choose App Section
+	=======================================
+	*/
+	.app-dev {
+		margin-bottom: 65px;
+	}
+	/*
+	=======================================
+	Ultimate Features Section
+	=======================================
+	*/
+	.ultimate-features-section .container-xl {
+		max-width: 540px !important;
+	}
+	.ultimate-features-title h2 {
+		text-align: center;
+		width: 84%;
+	}
+	.ultimate-features-title p {
+		width: 80%;
+		text-align: center;
+	}
+	.ultimate-features-list .row .col-md-6 {
+		width: 100%;
+	}
+	.features-list p {
+		margin-right: 0px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*
+	=======================================
+	Price Section
+	=======================================
+	*/
+	.price-row>* {
+		margin-bottom: 30px;
+	}
+	.price-area {
+		width: 100% !important;
+	}
+	/*
+	=======================================
+	Testimonial Section
+	=======================================
+	*/
+	.testimonial-section .container-xl {
+		max-width: 540px !important;
+	}
+	.review-desc {
+		width: 90%;
+	}
+	/*
+	=======================================
+	Asked Section
+	=======================================
+	*/
+	.accordion-area a {
+		position: relative;
+	}
+	.accordion:after {
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		right: 10px;
+	}
+	/*
+	=======================================
+	Download Section
+	=======================================
+	*/
+	.download-container {
+		max-width: 540px !important;
+	}
+	/*
+	=======================================
+	Footer Section
+	=======================================
+	*/
+	.footer-section {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+}
 
+@media (max-width: 575px) {
+	/*
+	=======================================
+	Reusable Components
+	=======================================
+	*/
+	.btn-prm {
+		padding: 10px 26px;
+		font-size: 15px;
+	}
+	.me-xs-20 {
+		margin-right: 20px !important;
+	}
+	/*
+	=======================================
+	Header Section Css
+	=======================================
+	*/
+	header {
+		padding-top: 20px !important;
+	}
+	/*
+	======================
+	Mobile Menu
+	======================
+	*/
+	.mobile-menu .nav-list {
+		right: -100%;
+		width: 100%;
+	}
+	/*
+	=======================================
+	Banner Section Css
+	=======================================
+	*/
+	.banner-text ul li:last-child span {
+		font-size: 15px;
+	}
+	.banner-text h1 {
+		line-height: 50px;
+		margin-top: 15px;
+		font-size: 40px;
+	}
+	/*
+	=======================================
+	Features Section
+	=======================================
+	*/
+	.features-container {
+		max-width: 100% !important;
+	}
+	/*
+	=======================================
+	Design Built Section
+	=======================================
+	*/
+	.design-built-container {
+		max-width: 100% !important;
+	}
+	.design-built-container .row>* {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+	.design-built-content h3 {
+		font-size: 32px;
+	}
+	.design-built-content a {
+		padding: 13px 28px;
+		font-size: 15px;
+	}
+	/*
+	=======================================
+	Choose App Section
+	=======================================
+	*/
+	.choose-app-title h2 {
+		font-size: 32px;
+	}
+	.apps-content .row>* {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	/*
+	=======================================
+	Ultimate Features Section
+	=======================================
+	*/
+	.ultimate-features-section .container-xl {
+		max-width: 100% !important;
+	}
+	.ultimate-features-title h2 {
+		font-size: 32px;
+		width: 100%;
+	}
+	.ultimate-features-content .row>* {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+	.ultimate-features-title p {
+		width: 100%;
+	}
+	.features-list a {
+		padding: 13px 45px!important;
+		font-size: 15px;
+	}
+	/*
+	=======================================
+	Price Section
+	=======================================
+	*/
+	.price-title h2 {
+		font-size: 32px;
+	}
+	/*
+	=======================================
+	Testimonial Section
+	=======================================
+	*/
+	.testimonial-text h2 {
+		font-size: 32px;
+	}
+	.testimonial-section .container-xl {
+		max-width: 100% !important;
+	}
+	.testimonial-text p {
+		width: 100%;
+	}
+	.testimonial-row>* {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+	/*
+	=========================
+	Testimonial Slider
+	=========================
+	*/
+	.client-slide {
+		text-align: center;
+	}
+	.review-desc {
+		width: 100%;
+	}
+	.swiper2 .swiper-wrapper {
+		padding-bottom: 160px;
+	}
+	.swiper-button-prev {
+		right: 50%;
+		left: auto;
+	}
+	.swiper-button-next {
+		left: 50%;
+		margin-left: 15px;
+	}
+	/*
+	=======================================
+	Asked Section
+	=======================================
+	*/
+	.asked-title h2 {
+		font-size: 32px;
+	}
+	.accordion:after {
+		font-size: 13px;
+	}
+	.accordion {
+		padding: 10px 20px;
+	}
+	.accordion-area a {
+		padding-right: 30px;
+	}
+	.panel {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.panel p {
+		padding-bottom: 25px;
+		padding-top: 10px;
+	}
+	/*
+	=======================================
+	Download Section
+	=======================================
+	*/
+	.download-container {
+		max-width: 100% !important;
+	}
+	.download-row {
+		margin-left: 0px !important;
+	}
+	.download-row .col-md-12:first-child {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.download-text span {
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+	}
+	.download-store {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.download-store a img {
+		width: 140px;
+	}
+	/*
+	=======================================
+	Footer Section
+	=======================================
+	*/
+	.copyright {
+		margin-top: 40px;
+	}
+}
 
-
+@media (max-width: 420px) {
+	/*
+	=======================================
+	Header Section Css
+	=======================================
+	*/
+	header {
+		padding-top: 20px !important;
+	}
+	/*
+	=======================================
+	Banner Section Css
+	=======================================
+	*/
+	.banner-text ul {
+		width: 100%;
+	}
+	.hero-btn {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.hero-btn a:first-child {
+		margin-right: 0px;
+		margin-bottom: 12px;
+	}
+}

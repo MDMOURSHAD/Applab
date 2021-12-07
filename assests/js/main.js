@@ -1,42 +1,98 @@
- 
- // Partners-section Slider //
+// Scroll to Top
 
- var swiper1 = new Swiper('.swiper1', {
-      slidesPerView: 'auto',
-      spaceBetween: 45, 
-      speed:3300,
-      loop: true,     
-       autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
+$(window).scroll(function () {
 
-  // Testimonial-section Slider //
+  if ($(this).scrollTop() > 100) {
+    $('.scroll-top').fadeIn();
+  } else {
+    $('.scroll-top').fadeOut();
+  }
 
-  var swiper2 = new Swiper('.swiper2', {
-         autoplay: {
-        delay: 4000,
-        speed: 70000,
-        disableOnInteraction: false,
-        },
-        loop: true,
-        navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+  // MENU STICKY //
+  var windows = $(window);
+  var sticky = $('.sticky')
+  windows.on('scroll', function () {
+    var scroll = windows.scrollTop();
+    if (scroll < 120) {
+      sticky.removeClass('stick');
+    } else {
+      sticky.addClass('stick');
+    }
+  });
 
 
- // Pricing Button //
+});
+// MOBILE MENU //
 
- $(document).ready(function(){
+const menuIcon = document.querySelector('.hamburger-menu');
+const navlist = document.querySelector('.nav-list');
 
-  $('.btn-1').click(function(){
+menuIcon.addEventListener("click", () => {
+
+  menuIcon.classList.toggle('change');
+  navlist.classList.toggle('slide-menu');
+
+});
+
+function myFunction() {
+
+  menuIcon.classList.remove('change');
+  navlist.classList.remove('slide-menu');
+
+}
+
+// Partners-section Slider //
+
+var swiper1 = new Swiper('.swiper1', {
+  spaceBetween: 30,
+  slidesPerView: 2,
+  speed: 3300,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 35,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 45,
+    },
+  }
+});
+
+// Testimonial-section Slider //
+
+var swiper2 = new Swiper('.swiper2', {
+  autoplay: {
+    delay: 4000,
+    speed: 70000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+// Pricing Button //
+
+$(document).ready(function () {
+
+  $('.btn-1').click(function () {
 
     $('.btn-1').addClass('active-effect');
     $('.btn-2').removeClass('active-effect');
@@ -45,7 +101,7 @@
 
   });
 
-    $('.btn-2').click(function(){
+  $('.btn-2').click(function () {
 
     $('.btn-2').addClass('active-effect');
     $('.btn-1').removeClass('active-effect');
@@ -55,5 +111,4 @@
   });
 
 
-
- });
+});

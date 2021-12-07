@@ -25,23 +25,36 @@
 		<link rel="stylesheet" type="text/css" href="assests/css/responsive.css">
 		
 	</head>
-	<body>
+	<body onload="loading()">
 		
-		
+		<!--
+		==========================
+		Preloader
+		==========================
+		-->
+		<div class="preloader d-flex align-items-center justify-content-center">
+			<img src="assests/images/Ripple-3.3s-98px.gif" alt="preloader-img">
+		</div>
+		<!--
+		==========================
+		Preloader
+		==========================
+		-->
+
 		<!--
 		===============================================
 		Start Header Section
 		===============================================
 		-->
-		<header class="pt-90" class="header-section overflow-hidden">
-			<nav class="nav">
+		<header class="header-section overflow-hidden pt-90">
+			<nav class="nav sticky">
 				<div class="container">
 					<div class="nav-bar d-flex justify-content-between align-items-center">
 						<div class="logo">
 							<a href="#"><img src="assests/images/header-logo.png" class="img-fluid" alt="header-logo"></a>
 						</div>
 						<!-- Main Menu -->
-						<div class="main-menu">
+						<div class="main-menu d-none d-lg-block">
 							<ul class="menu-list">
 								<li class="d-inline-block me-35"><a href="#" class="font-weight-400  font-color-24">Home</a></li>
 								<li class="d-inline-block me-35"><a href="#" class="font-weight-400  font-color-24">Key Features</a></li>
@@ -50,6 +63,25 @@
 								<li class="d-inline-block me-35"><a href="#" class="font-weight-400  font-color-24">FAQ</a></li>
 								<li class="d-inline-block"><a href="#" class="btn-prm">Try for free</a></li>
 							</ul>
+						</div>
+
+						<!-- MOBILE MENU -->
+						<div class="mobile-menu position-relative d-lg-none">
+							<div class="hamburger-menu">
+								<div class="line line-1"></div>
+								<div class="line line-2"></div>
+								<div class="line line-3"></div>
+							</div>
+							<div class="nav-list">
+								<ul>
+									<li><a href="#" onclick="myFunction()">home</a></li>
+									<li><a href="#" onclick="myFunction()">about</a></li>
+									<li><a href="#" onclick="myFunction()">service</a></li>
+									<li><a href="#" onclick="myFunction()">blog</a></li>
+									<li><a href="#" onclick="myFunction()">contact</a></li>
+								</ul>
+								<a href="#" class="d-block mt-10 btn-prm">Try for free</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -60,6 +92,7 @@
 		End Header Section
 		===============================================
 		-->
+
 		<main>
 			<!--
 			===============================================
@@ -72,9 +105,9 @@
 						<div class="col-xl-1">
 							
 						</div>
-						<div class="col-xl-6 d-flex align-items-center">
-							<div class="banner-text">
-								<ul class="d-flex align-items-center mb-10">
+						<div class="col-xl-6 col-sm-12 col-md-7 d-flex align-items-center">
+							<div class="banner-text text-center text-md-start">
+								<ul class="d-flex align-items-center mx-auto mx-md-0 mb-10">
 									<li class="d-inline-block me-10"><span class="text-center font-color-ff"><i class="fas fa-angle-up"></i></span></li>
 									<li class="d-inline-block"><span class="font-size-18 font-weight-400 font-color-24">#1 Editiors Choice App of 2020</span></li>
 								</ul>
@@ -88,9 +121,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4">
-							<div class="hero-right">
-								<img src="assests/images/hero-img.png" class="img-fluid" alt="hero-img" class="hero-img">
+						<div class="col-xl-4 col-sm-12 col-md-5">
+							<div class="hero-right text-center text-md-center">
+								<img src="assests/images/hero-img.png" alt="hero-img" class="hero-img img-fluid">
 							</div>
 						</div>
 						<div class="col-xl-1">
@@ -104,6 +137,7 @@
 			End Bannner Section
 			===============================================
 			-->
+
 			<!--
 			===============================================
 			Start Our Partners Section
@@ -159,6 +193,7 @@
 			End Our Partners Section
 			===============================================
 			-->
+
 			<!--
 			===============================================
 			Start Features Section
@@ -168,48 +203,48 @@
 				<div class="container features-container">
 					<div class="row gx-0">
 						<!-- Left Mobile -->
-						<div class="col-lg-6">
+						<div class="col-lg-6 d-flex align-items-lg-center align-items-xl-start">
 							<div class="features-img">
 								<img src="assests/images/features-img.png" alt="features-img" class="img-fluid">
 							</div>
 						</div>
 						<!-- Right Features Contents -->
-						<div class="col-lg-6 d-flex align-items-center">
+						<div class="col-lg-6 d-flex align-items-xl-center">
 							<div class="features-contents">
-								<div class="features-title">
+								<div class="features-title text-center text-lg-start">
 									<h2 class="font-size-36 font-color-24 letter-space-0">Awesome apps
 									features</h2>
 									<p class="paragraph mt-10 letter-space-0">Increase productivity with a simple to-do app. app for
 									managing your personal budgets.</p>
 								</div>
 								<div class="features-desc mt-80">
-									<div class="features-item d-flex">
-										<div class="f-icon me-30 align-self-end">
+									<div class="features-item d-flex flex-column flex-md-row">
+										<div class="f-icon me-30 align-self-md-end align-self-center">
 											<img src="assests/images/features1.png" alt="features">
 										</div>
-										<div class="f-text">
+										<div class="f-text text-center text-md-start">
 											<h3 class="font-size-20 font-color-f5 letter-space-0 text-capitalize">Fast Performance</h3>
 											<p class="paragraph letter-space-0 mt-10">Get your blood tests delivered at
 												home collect a sample from the
 											news your blood tests.</p>
 										</div>
 									</div>
-									<div class="features-item  mt-60 d-flex">
-										<div class="f-icon me-30 align-self-center">
+									<div class="features-item  mt-60 d-flex  flex-column flex-md-row">
+										<div class="f-icon me-30 align-self-md-end align-self-center">
 											<img src="assests/images/features2.png" alt="features">
 										</div>
-										<div class="f-text">
+										<div class="f-text text-center text-md-start">
 											<h3 class="font-size-20 font-color-f5 letter-space-0 text-capitalize">Prototyping</h3>
 											<p class="paragraph letter-space-0 mt-10">Get your blood tests delivered at
 												home collect a sample from the
 											news your blood tests.</p>
 										</div>
 									</div>
-									<div class="features-item mt-55 d-flex">
-										<div class="f-icon me-30 align-self-start">
+									<div class="features-item mt-55 d-flex flex-column flex-md-row">
+										<div class="f-icon me-30 align-self-md-end align-self-center">
 											<img src="assests/images/features3.png" alt="features">
 										</div>
-										<div class="f-text">
+										<div class="f-text text-center text-md-start">
 											<h3 class="font-size-20 font-color-f5 letter-space-0 text-capitalize">Vector Editing</h3>
 											<p class="paragraph letter-space-0 mt-10">Get your blood tests delivered at
 												home collect a sample from the
@@ -227,6 +262,7 @@
 			End Features Section
 			===============================================
 			-->
+
 			<!--
 			===============================================
 			Start Jacpots Section
@@ -235,13 +271,13 @@
 			<div class="jacpots-section py-55 overflow-hidden">
 				<div class="container">
 					<!-- Title in Top -->
-					<div class="jacpots-title mx-auto d-flex">
-						<div class="jacpots-heading">
+					<div class="jacpots-title mx-auto d-flex flex-column flex-md-row text-center text-md-start">
+						<div class="jacpots-heading d-flex align-items-md-center align-items-lg-start">
 							<h2 class="font-size-40 letter-space-0 font-color-24">Smart jackpots that
 							you may love this
 							anytime &   anywhere</h2>
 						</div>
-						<div class="jacpots-vh-line"></div>
+						<div class="jacpots-vh-line d-none d-md-block"></div>
 						<div class="jacpots-title-desc align-self-center">
 							<p class="paragraph ps-50 letter-space-0">The rise of mobile devices transforms the way we
 								consume information entirely and the world's most
@@ -249,9 +285,9 @@
 						</div>
 					</div>
 					<!-- Content in bottom -->
-					<div class="jacpots-content mx-auto">
-						<div class="row gx-0">
-							<div class="col-md-4">
+					<div class="jacpots-content text-center text-lg-start mx-auto">
+						<div class="row gx-0 jacpots-row">
+							<div class="col-md-6 col-lg-4">
 								<div class="jacpots-item">
 									<img src="assests/images/jackpots1.png" alt="jackpots" class="img-fluid">
 									<h3 class="font-size-20 mb-10 mt-30 letter-space-0 font-color-f5">Automatic Payouts</h3>
@@ -262,7 +298,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-6 col-lg-4">
 								<div class="jacpots-item letter-space-0">
 									<img src="assests/images/jackpots2.png" alt="jackpots" class="img-fluid">
 									<h3 class="font-size-20 mb-10 mt-30 font-color-256">Network Effect</h3>
@@ -273,7 +309,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-6 col-lg-4 mx-auto">
 								<div class="jacpots-item">
 									<img src="assests/images/jackpots3.png" alt="jackpots" class="img-fluid">
 									<h3 class="font-size-20 mb-10 mt-30 letter-space-0 font-color-40">Bigger Rewards Method</h3>
@@ -293,6 +329,7 @@
 			End Jacpots Section
 			===============================================
 			-->
+
 			<!--
 			===============================================
 			Start Design Built Section
@@ -309,7 +346,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 align-self-center">
-							<div class="design-built-content ps-65">
+							<div class="design-built-content text-center text-sm-start ps-65">
 								<h3 class="font-size-36 font-color-24 letter-space-0">Designed & built by
 								the latest code
 								integration</h3>
@@ -327,6 +364,7 @@
 			Star Design Built Section
 			===============================================
 			-->
+
 			<!--
 			===============================================
 			Start Choose App Section
@@ -341,8 +379,8 @@
 						and the world's most elevant channels such as Facebook.</p>
 					 </div>
 					 <div class="apps-content mt-85 mx-auto">
-					 	<div class="row g-0 justify-content-between">
-					 		<div class="col-md-4">
+					 	<div class="row g-0 justify-content-xl-between apps-content-row-1">
+					 		<div class="col-lg-4 col-md-6 app-dev">
 					 			<div class="apps-item text-center">
 					 				<img src="assests/images/apps1.png" alt="apps" class="img-fluid">
 					 				<h3 class="font-size-20 mb-15 letter-space-0 font-color-24 mt-30">App Development</h3>
@@ -351,7 +389,7 @@
 									news your blood tests.</p>
 					 			</div>
 					 		</div>
-					 		<div class="col-md-4">
+					 		<div class="col-lg-4 col-md-6">
 					 			<div class="apps-item text-center">
 					 				<img src="assests/images/apps2.png" alt="apps" class="img-fluid">
 					 				<h3 class="font-size-20 mb-15 letter-space-0 font-color-24 mt-30">10 Times Award</h3>
@@ -360,7 +398,7 @@
 									news your blood tests.</p>
 					 			</div>
 					 		</div>
-					 		<div class="col-md-4">
+					 		<div class="col-lg-4 col-md-6 storage">
 					 			<div class="apps-item text-center">
 					 				<img src="assests/images/apps3.png" alt="apps" class="img-fluid">
 					 				<h3 class="font-size-20 mb-15 letter-space-0 font-color-24 mt-30">Cloud Storage</h3>
@@ -369,7 +407,7 @@
 									news your blood tests.</p>
 					 			</div>
 					 		</div>
-					 		<div class="col-md-4 mt-65">
+					 		<div class="col-lg-4 mt-65 col-md-6">
 					 			<div class="apps-item text-center">
 					 				<img src="assests/images/apps4.png" alt="apps" class="img-fluid">
 					 				<h3 class="font-size-20 mb-15 letter-space-0 font-color-24 mt-30">Customization</h3>
@@ -378,7 +416,7 @@
 									news your blood tests.</p>
 					 			</div>
 					 		</div>
-					 		<div class="col-md-4 mt-65">
+					 		<div class="col-lg-4 mt-65 col-md-6">
 					 			<div class="apps-item text-center">
 					 				<img src="assests/images/apps5.png" alt="apps" class="img-fluid">
 					 				<h3 class="font-size-20 mb-15 letter-space-0 font-color-24 mt-30">UX Planning</h3>
@@ -387,7 +425,7 @@
 									news your blood tests.</p>
 					 			</div>
 					 		</div>
-					 		<div class="col-md-4 mt-65">
+					 		<div class="col-lg-4 mt-65 col-md-6">
 					 			<div class="apps-item text-center">
 					 				<img src="assests/images/apps1.png" alt="apps" class="img-fluid">
 					 				<h3 class="font-size-20 mb-15 letter-space-0 font-color-24 mt-30">Customer Support</h3>
@@ -405,34 +443,35 @@
 			End Choose App Section
 			===============================================
 			-->
+
 			<!--
 			===============================================
 			Start Ultimate Features Section
 			===============================================
 			-->
 			<section class="ultimate-features-section overflow-hidden py-45">
-				<div class="container">
+				<div class="container container-xl">
 					<div class="ultimate-features-content ms-auto">
 						<div class="row g-0">
 							<!-- Left Desc -->
-							<div class="col-md-8">
-								<div class="ultimate-features-title mb-60">
-									<h2 class="font-size-36 font-color-24 letter-space-0">Ultimate features
+							<div class="col-xl-8">
+								<div class="ultimate-features-title text-md-center text-lg-start mb-60">
+									<h2 class="font-size-36 font-color-24 letter-space-0 mx-auto mx-lg-0">Ultimate features
 									that we built</h2>
-									<p class="paragraph mt-15 letter-space-0">The rise of mobile devices transforms the way we
+									<p class="mx-auto mx-lg-0 paragraph mt-15 letter-space-0">The rise of mobile devices transforms the way we
 									consume information entirely.</p>
 								</div>
 								<div class="ultimate-features-list">
-									<div class="row g-0 justify-content-between">
+									<div class="row g-0 justify-content-xl-between">
 										<div class="col-md-6">
-											<div class="features-list">
+											<div class="features-list text-center text-md-start">
 												<img src="assests/images/ultimate-features1.png" class="img-fluid" alt="ultimate-features">
 												<h3 class="font-size-20 font-color-24 letter-space-0 mt-30">App Development</h3>
 												<p class="paragraph">Get your blood tests delivered at
 												home collect a sample from the
 												news your blood tests.</p>
 											</div>
-											<div class="features-list mt-55">
+											<div class="features-list text-center text-md-start mt-55">
 												<img src="assests/images/ultimate-features3.png" class="img-fluid" alt="ultimate-features">
 												<h3 class="mt-30 font-size-20 font-color-24 letter-space-0">Cloud Storage</h3>
 												<p class="paragraph">Get your blood tests delivered at
@@ -442,14 +481,14 @@
 											</div>
 										</div>
 										<div class="col-md-6">
-											<div class="features-list">
+											<div class="features-list text-center text-md-start">
 												<img src="assests/images/ultimate-features2.png" class="img-fluid" alt="ultimate-features">
 												<h3 class="mt-30 font-size-20 font-color-24 letter-space-0">UX Planing</h3>
 												<p class="paragraph">Get your blood tests delivered at
 												home collect a sample from the
 												news your blood tests.</p>
 											</div>
-											<div class="features-list mt-55">
+											<div class="features-list text-center text-md-start mt-55">
 												<img src="assests/images/ultimate-features4.png" class="img-fluid" alt="ultimate-features">
 												<h3 class="mt-30 font-size-20 font-color-24 letter-space-0">Customer support</h3>
 												<p class="paragraph">Get your blood tests delivered at
@@ -461,7 +500,7 @@
 								</div>
 							</div>
 							<!-- Right Side image -->
-							<div class="col-md-4 d-flex align-items-center">
+							<div class="col-xl-4 d-flex align-items-center">
 								<div class="ultimate-features-img">
 									<img src="assests/images/ultimate-features.png" alt="ultimate-features" class="img-fluid">
 								</div>
@@ -491,8 +530,8 @@
 					</div>
 					<!-- Button Area -->
 					<div class="price-btn-area mx-auto text-center">
-						<a href="javascript:void(0)"class="active-effect btn-1">Monthly</a>
-						<a href="javascript:void(0)"class="btn-2">Annually</a>
+						<a href="javascript:void(0)" class="active-effect btn-1">Monthly</a>
+						<a href="javascript:void(0)" class="btn-2">Annually</a>
 					</div>
 					<!-- Price List Area -->
 					<div class="row mt-50 price-row justify-content-center">
@@ -538,7 +577,7 @@
 										<li class="font-weight-400 font-color-99 font-size-16">eCommerce Store</li>
 										<li class="font-weight-400 font-color-99 font-size-16"></li>
 										<li class="d-inline-block"><a class="btn-prm mnt-btn">Subscribe Now</a></li>
-										<li class="d-inline-block"><a class="font-color-250 font-weight-400" href="#">Or Start 14 days trail</a></li>
+										<li class="d-inline-block d-block d-md-inline-block"><a class="font-color-250 font-weight-400" href="#">Or Start 14 days trail</a></li>
 									</ul>
 								</div>
 							</div>
@@ -551,23 +590,24 @@
 			End Price Section
 			===============================================
 			-->
+
 			<!--
 			===============================================
 			Start Testimonial Section
 			===============================================
 			-->
 			<section class="testimonial-section overflow-hidden">
-				<div class="container">
+				<div class="container container-xl">
 					<div class="row g-0 testimonial-row me-auto">
 						<!-- Left side Image -->
-						<div class="col-md-6 d-flex align-items-end">
+						<div class="col-md-12 col-lg-6 d-flex align-items-xl-end align-items-lg-center">
 							<div class="testimonial-img">
 								<img src="assests/images/testimonial.png" alt="testimonial" class="img-fluid">
 							</div>
 						</div>
 						<!-- Right side text -->
-						<div class="col-md-6">
-							<div class="testimonial-text">
+						<div class="col-md-12 col-lg-6">
+							<div class="testimonial-text text-center text-lg-start">
 								<h2 class="font-color-24 font-size-40">Meet Client Satisfaction
 								by using product</h2>
 								<p class="paragraph">The rise of mobile devices transforms the way we consume.
@@ -586,8 +626,8 @@
 											</ul>
 											<span class="font-size-20 font-color-24">User friendly & Customizable</span>
 											<p class="paragraph review-desc">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-											<div class="d-flex align-items-center">
-												<div class="me-30">
+											<div class="d-flex align-items-center justify-content-center justify-content-sm-start">
+												<div class="me-30 me-xs-20">
 													<img src="assests/images/client.png" alt="client" class="img-fluid">
 												</div>
 												<div class="client-name">
@@ -608,8 +648,8 @@
 											</ul>
 											<span class="font-size-20 font-color-24">User friendly & Customizable</span>
 											<p class="paragraph review-desc">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-											<div class="d-flex align-items-center">
-												<div class="me-30">
+											<div class="d-flex align-items-center justify-content-center justify-content-sm-start">
+												<div class="me-30 me-xs-20">
 													<img src="assests/images/client.png" alt="client" class="img-fluid">
 												</div>
 												<div class="client-name">
@@ -630,8 +670,8 @@
 											</ul>
 											<span class="font-size-20 font-color-24">User friendly & Customizable</span>
 											<p class="paragraph review-desc">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-											<div class="d-flex align-items-center">
-												<div class="me-30">
+											<div class="d-flex align-items-center justify-content-center justify-content-sm-start">
+												<div class="me-30 me-xs-20">
 													<img src="assests/images/client.png" alt="client" class="img-fluid">
 												</div>
 												<div class="client-name">
@@ -670,23 +710,23 @@
 					 </div>
 					<div class="row mt-55">
 						<div class="col-md-12 mx-auto accordion-area">
-							<a href="javascript:void(0)"class="py-10 accordion font-size-20 font-color-24 text-start">How to contact with riders emergency?</a>
+							<a href="javascript:void(0)" class="py-10 accordion font-size-20 font-color-24 text-start">How to contact with riders emergency?</a>
 							<div class="panel overflow-hidden paragraph">
 							  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
 							</div>
-							<a href="javascript:void(0)"class="mt-10 py-10 accordion font-size-20 font-color-24 text-start">App installation failed, how to update system information?</a>
+							<a href="javascript:void(0)" class="mt-10 py-10 accordion font-size-20 font-color-24 text-start">App installation failed, how to update system information?</a>
 							<div class="panel overflow-hidden paragraph">
 							  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
 							</div>
-							<a href="javascript:void(0)"class="mt-10 py-10 accordion font-size-20 font-color-24 text-start">Website reponse taking time, how to improve?</a>
+							<a href="javascript:void(0)" class="mt-10 py-10 accordion font-size-20 font-color-24 text-start">Website reponse taking time, how to improve?</a>
 							<div class="panel overflow-hidden paragraph">
 							  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
 							</div>
-							<a href="javascript:void(0)"class="mt-10 py-10 accordion font-size-20 font-color-24 text-start">New update fixed all bug and issues</a>
+							<a href="javascript:void(0)" class="mt-10 py-10 accordion font-size-20 font-color-24 text-start">New update fixed all bug and issues</a>
 							<div class="panel overflow-hidden paragraph">
 							  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
 							</div>
-							<a href="javascript:void(0)"class="mt-10 py-10 accordion font-size-20 font-color-24 text-start">How to contact with riders emergency?</a>
+							<a href="javascript:void(0)" class="mt-10 py-10 accordion font-size-20 font-color-24 text-start">How to contact with riders emergency?</a>
 							<div class="panel overflow-hidden paragraph">
 							  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
 							</div>
@@ -707,21 +747,21 @@
 			-->
 			<section class="download-section overflow-hidden pt-15">
 				<div class="container download-container">
-					<div class="row download-row g-0 ms-auto">
+					<div class="row download-row g-5  g-lg-0 ms-auto">
 						<!-- Left Text -->
-						<div class="col-md-6 d-flex align-items-center">
+						<div class="col-md-12 col-lg-6 d-flex align-items-center">
 							<div class="download-text">
-								<span class="font-size-48 font-color-24">Download our App now !</span>
-								<p class="paragraph">The rise of mobile devices transforms the way we consume information entirely
+								<h3 class="font-size-48 font-color-24">Download our App now !</h3>
+								<p class="paragraph text-center text-sm-start">The rise of mobile devices transforms the way we consume information entirely
 								and the world's most elevant channels such as Facebook.</p>
 								<div class="download-store">
 									<a href="#"><img src="assests/images/google-play.png" alt="google-play" class="img-fluid"></a>
-									<a href="#"><img src="assests/images/app-store.png" alt="app-store" alt="app-store"></a>
+									<a href="#"><img src="assests/images/app-store.png" alt="app-store"></a>
 								</div>
 							</div>
 						</div>
 						<!-- Right img -->
-						<div class="col-md-6">
+						<div class="col-md-12 col-lg-6 d-flex align-items-md-center align-items-xl-start">
 							<div class="download-img">
 								<img src="assests/images/download.png" class="img-fluid" alt="download">
 							</div>
@@ -771,6 +811,22 @@
 		End Footer Section
 		===============================================
 		-->
+
+		<!--
+		====================
+		Start Scroll to top 
+		====================
+		-->
+
+		<div>
+			<a href="#" class="scroll-top hvr-bob"><span class="icon-arrow-up-solid"></span></a>
+		</div>
+
+		<!--
+		====================
+		End Scroll to top
+		====================
+		-->
 	
 		
 		<!-- Js Here -->
@@ -781,20 +837,29 @@
 		<script src="assests/js/swiper-bundle.min.js"></script>
 		<script src="assests/js/main.js"></script>
 		<script>
-			var acc = document.getElementsByClassName("accordion");
-			var i;
+		// Preloader //
+		function loading() {
 
-			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var panel = this.nextElementSibling;
-			    if (panel.style.maxHeight) {
-			      panel.style.maxHeight = null;
-			    } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    } 
-			  });
-			}
+			var loading = document.getElementsByClassName('preloader');
+
+			loading[0].style.setProperty("display", "none", "important");
+
+		}
+		// Accordion //
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
 		</script>
 	</body>
 </html>
