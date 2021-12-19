@@ -99,11 +99,11 @@ $('.video').magnificPopup({
 // Testimonial-section Slider //
 
 var swiper2 = new Swiper('.swiper2', {
-  autoplay: {
-    delay: 4000,
-    speed: 70000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
+  speed:1200,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',

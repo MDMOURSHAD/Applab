@@ -337,7 +337,7 @@ Header Sticky
 	width: 100%;
 	-webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-	z-index: 999999;
+	z-index: 99999;
 	background-color: #fff;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
