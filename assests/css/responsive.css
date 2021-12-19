@@ -384,7 +384,7 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		position: absolute;
-		z-index: 9999999999;
+		z-index: 999999;
 		cursor: pointer;
 	}
 	.hamburger-menu .line {
@@ -431,7 +431,7 @@
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		z-index: 99999999;
+		z-index: 9999;
 		height: 100%;
 		width: 400px;
 		-webkit-box-align: center;
@@ -566,6 +566,7 @@
 	Choose App Section
 	=======================================
 	*/
+
 	.choose-app-section {
 		padding: 50px 0px;
 	}
@@ -642,6 +643,9 @@
 	Asked Section
 	=======================================
 	*/
+	.asked-section {
+	    padding-top: 0px;
+	}
 	.accordion-area {
 		max-width: 100%;
 	}
@@ -782,11 +786,20 @@
 	Testimonial Section
 	=======================================
 	*/
+	.testimonial-section{
+		padding-bottom: 50px;
+	}
 	.testimonial-section .container-xl {
 		max-width: 540px !important;
 	}
+	.testimonial-row>* {
+	    margin-bottom: 0px !important;
+	}
 	.review-desc {
 		width: 90%;
+	}
+	.swiper-button-prev, .swiper-button-next {
+	    top: 56%;
 	}
 	/*
 	=======================================
@@ -811,6 +824,10 @@
 	*/
 	.download-container {
 		max-width: 540px !important;
+	}
+	.download-text h3 {
+	    font-size: 40px;
+	    text-align: center;
 	}
 	/*
 	=======================================
@@ -900,10 +917,6 @@
 	*/
 	.choose-app-title h2 {
 		font-size: 32px;
-	}
-	.apps-content .row>* {
-		padding-left: 0px;
-		padding-right: 0px;
 	}
 	/*
 	=======================================
@@ -1074,5 +1087,13 @@
 	.hero-btn a:first-child {
 		margin-right: 0px;
 		margin-bottom: 12px;
+	}
+	/*
+	=======================================
+	Features Section Css
+	=======================================
+	*/
+	.features-title p {
+	    max-width: 100%;
 	}
 }

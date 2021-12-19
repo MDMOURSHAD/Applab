@@ -284,7 +284,7 @@ Preloader
 .preloader {
 	position: fixed;
 	top: 0;
-	z-index: 999999999999999;
+	z-index: 999999;
 	left: 0;
 	height: 100%;
 	background: #fff;
@@ -1089,18 +1089,18 @@ Start Scroll to Top
 */
 
 .scroll-top {
-	display: none;
-	position: fixed;
-	right: 30px;
-	height: 40px;
-	width: 40px;
-	text-decoration: none;
-	color: #fff;
-	border-radius: 3px;
-	line-height: 40px;
-	text-align: center;
-	background: #f54748;
-	bottom: 40px;
+    display: none;
+    position: fixed;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    background: #2500f9;
+    bottom: 40px;
 }
 
 
